@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="loginpage.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="Navbar">
+      <span>
+        <ul><a style="font-size:1.25rem;font-weight: 900;" href="#">E-cell</a></ul>
+      </span>
+      <span>
+        <ul><a href="#">Home</a></ul>
+        <ul><a href="#">About</a></ul>
+      </span>
+    </div>
+  </header>
+  <main style="margin-top:200px">
+    <div style="position:relative;margin:10px;" class="loginform">
+      <form action="thanks.html" method="get">
+        <h2>Sign In</h2>
+        <div>
+          <input type="text" class="data" id="name" placeholder="Enter your name " required>
+        </div>
+        <div>
+          <input type="email" class="data" id="mail" placeholder="Enter E-mail ID" required value="">
+          <p id="mailfeed"></p>
+        </div>
+        <div>
+          <input type="text" class="data" id="phnumber" placeholder="Enter Mobile No." value="">
+          <p id="phonefeed"></p>
+        </div>
+        <div>
+          <input type="password" class="data" id="pass" placeholder="Create your password" required value="">
+          <p id="passfeed"></p>
+        </div>
+        <div>
+          <input type="password" class="data" id="repass" placeholder="Re-enter your password" required value="">
+          <p id="repassfeed"></p>
+        </div>
+        <div>
+          <input type="text" class="data" id="desc" placeholder="Describe about yourself">
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <div>
+          <span><a href="#">Forgot password?</a></span>
+          <span>Already have an account? <a href="#">Log In</a></span>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="loginpage.js"></script>
+</body>
+
+</html>

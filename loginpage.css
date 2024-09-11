@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+header {
+  background: linear-gradient(to right, rgb(119 43 209), rgb(62 126 250));
+  padding: 15px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+ul {
+  display: inline;
+}
+
+.Navbar{
+  display: flex;
+  justify-content: space-between
+  z-index: 5000;
+}
+.Navbar span {
+  display: block;
+  align-items: center;
+  margin-right: 15px;
+}
+
+
+.Navbar ul {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.Navbar ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.Navbar ul a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.loginform {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginform h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.loginform input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.loginform input:focus {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.loginform button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.loginform button:hover {
+  background-color: #1a5bbf;
+}
+
+.loginform div span {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.loginform div span a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.loginform div span a:hover {
+  color: #cfd8dc;
+}
+
+p {
+  font-size: 14px;
+  color: #ff6f61;
+  margin: 5px 0 0;
+}
+
+footer {
+  display: none; /* Hide footer for now */
+}
+input{
+  transition: all 0s linear;
+}
+input:active{
+  box-shadow: 0 0 10px green;
+}
